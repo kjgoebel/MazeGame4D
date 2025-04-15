@@ -2,12 +2,19 @@ using UnityEngine;
 
 public static class PseudoRandom {
     public static uint _seed = 0;
-    public static float Float() {
-        unchecked {
+
+    public static uint Int()
+    {
+        unchecked
+        {
             _seed += 5381;
             _seed = (_seed << 5) ^ (_seed >> 3);
-            return _seed / (float)uint.MaxValue;
+            return _seed;
         }
+    }
+
+    public static float Float() {
+        return Int() / (float)uint.MaxValue;
     }
     public static Vector2 Uniform2D() {
         return new Vector2(Float(), Float());
