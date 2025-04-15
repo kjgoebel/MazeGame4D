@@ -1,0 +1,28 @@
+Scarab of Ra in 4D
+
+Level N is an MxMxM (M = 2n + 1) 3D maze, in which the goal is to find the way down to level N+1. (Problem: a mere 3D maze isn't really a 4D problem. Maybe there's some verticality in each level?)
+	Need more efficient collision detection.
+
+Walls are only visible in volume view if you've seen them in vertical slice view? Want to distinguish volume view as map view.
+
+There are obstacles.
+	traps
+	slopes
+	jumping puzzles?
+	monsters
+	doors
+	puzzles?
+	3D SOKOBAN?
+
+Maybe there are monsters? You hear a growl.... Which direction is the monster coming from? Monsters will be hard to make.
+
+Could make monsterous obstacles:
+	Need Big Meat to get past the Wolf obstacle.
+	Need Mirror to get past the Nymph obstacle.
+	?
+
+There are poison arrow traps where you may have to check in all six directions to find the port from which the arrow issues.
+
+Need way to mark the ground. Must have multiple marks per hypertile.
+
+Need ghosts for maze geometry close to slice.
